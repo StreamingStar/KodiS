@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.kodistreamss"
+       name="KodiStreams.tv"
+       version="1.0.2"
+       provider-name="MetalKettle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.t0mm0.common" version="1.1.0"/>
+		<import addon="script.module.beautifulsoup"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+    <summary lang="en">Premium sports streaming service</summary>
+    <description lang="en"></description>
+    <disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.kodistreams" name="KodiStreams Addon Repository" version="1.0.0" provider-name="KodiStreams">
+	<extension point="xbmc.addon.repository" name="KodiStreams Addon Repository">
+		<info compressed="false">https://raw.githubusercontent.com/StreamingStar/KodiS/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/StreamingStar/KodiS/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/StreamingStar/KodiS/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Download and install KodiStreams</summary>
+		<description>Download and install KodiStreams</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
